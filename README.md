@@ -4,6 +4,9 @@ Interactive Hiring Proposal
 
 ​This project is a web-based, interactive job application tool designed to engage recruiters through dynamic UI elements rather than traditional application methods.
 
+## Live Demo
+Check out the live project here: [https://abdullah4229.github.io/-abdullah-dev-portfolio/](https://abdullah4229.github.io/-abdullah-dev-portfolio/)
+
 ​Technical Overview 
 
 ​The project is built using HTML5, CSS3, and Vanilla JavaScript. It is designed to be lightweight, fast, and responsive across devices without any external dependencies or frameworks.
