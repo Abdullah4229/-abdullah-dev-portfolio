@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+    <meta charset="UTF-8">
+    <title>İş Başvurusu - Abdullah</title>
+    <style>
+        body {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+            font-family: 'Segoe UI', Tahoma, sans-serif;
+            background-color: #f9f9f9;
+        }
+        .container { text-align: center; background: white; padding: 40px; border-radius: 20px; box-shadow: 0 10px 25px rgba(0,0,0,0.1); }
+        button {
+            padding: 15px 30px;
+            font-size: 18px;
+            margin: 15px;
+            cursor: pointer;
+            border: none;
+            border-radius: 10px;
+            transition: all 0.3s;
+            font-weight: bold;
+        }
+        #evet { background-color: #007bff; color: white; }
+        #hayir { background-color: #6c757d; color: white; }
+        
+        #sonuc { display: none; }
+        .link-container { display: flex; gap: 20px; justify-content: center; margin-top: 20px; }
+        a { color: #007bff; text-decoration: none; font-weight: bold; border: 2px solid #007bff; padding: 10px 20px; border-radius: 8px; transition: 0.3s; }
+        a:hover { background-color: #007bff; color: white; }
+    </style>
+</head>
+<body>
+
+    <div class="container" id="main">
+        <h1 id="soru">Abdullah'ı şirketinize almak ister misiniz?</h1>
+        <button id="evet" onclick="kabulEt()">Evet, kesinlikle!</button>
+        <button id="hayir" onmouseover="kacir()" onclick="kacir()">Hayır</button>
+    </div>
+
+    <div class="container" id="sonuc">
+        <h1>Harika! Tanıştığımıza memnun oldum. 🎉</h1>
+        <p>Projelerime ve oyun geliştirme videolarıma buradan göz atabilirsiniz:</p>
+        <div class="link-container">
+            <a href="https://github.com/Abdullah4229" target="_blank">GitHub Profilim</a>
+            <a href="https://youtube.com/@aktaec-game" target="_blank">YouTube Kanalım</a>
+        </div>
+    </div>
+
+    <script>
+        function kabulEt() {
+            document.getElementById('main').style.display = "none";
+            document.getElementById('sonuc').style.display = "block";
+        }
+
+        function kacir() {
+            const btn = document.getElementById('hayir');
+            btn.style.position = "fixed";
+            btn.style.top = Math.random() * 80 + "vh";
+            btn.style.left = Math.random() * 80 + "vw";
+        }
+    </script>
+</body>
+</html>
